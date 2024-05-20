@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: 'montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.bgdiv{
+    background: transparent;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text2d, .text3d {
+    position: absolute;
+    z-index: 0;
+    margin-top: -7.5rem;
+}
+
+h1{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    color: #c2c2c2;
+}
+
+.apple2d .apple {
+    width: 370px;
+    height: auto;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+}
+
+.appletop{
+    width: 350px;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.apple{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.apple3d {
+    width: 370px;
+    height: 204px;
+    background-size: cover;
+    animation: spin3d 2.5s linear infinite;
+    margin-left: -25%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes spin3d {
+    0% { background-image: url('apple1.png'); }
+    2.78% { background-image: url('apple2.png'); }
+    5.56% { background-image: url('apple3.png'); }
+    8.33% { background-image: url('apple4.png'); }
+    11.11% { background-image: url('apple5.png'); }
+    13.89% { background-image: url('apple6.png'); }
+    16.67% { background-image: url('apple7.png'); }
+    19.44% { background-image: url('apple8.png'); }
+    22.22% { background-image: url('apple9.png'); }
+    25% { background-image: url('apple10.png'); }
+    27.78% { background-image: url('apple11.png'); }
+    30.56% { background-image: url('apple12.png'); }
+    33.33% { background-image: url('apple13.png'); }
+    36.11% { background-image: url('apple14.png'); }
+    38.89% { background-image: url('apple15.png'); }
+    41.67% { background-image: url('apple16.png'); }
+    44.44% { background-image: url('apple17.png'); }
+    47.22% { background-image: url('apple18.png'); }
+    50% { background-image: url('apple19.png'); }
+    52.78% { background-image: url('apple20.png'); }
+    55.56% { background-image: url('apple21.png'); }
+    58.33% { background-image: url('apple22.png'); }
+    61.11% { background-image: url('apple23.png'); }
+    63.89% { background-image: url('apple24.png'); }
+    66.67% { background-image: url('apple25.png'); }
+    69.44% { background-image: url('apple26.png'); }
+    72.22% { background-image: url('apple27.png'); }
+    75% { background-image: url('apple28.png'); }
+    77.78% { background-image: url('apple29.png'); }
+    80.56% { background-image: url('apple30.png'); }
+    83.33% { background-image: url('apple31.png'); }
+    86.11% { background-image: url('apple32.png'); }
+    88.89% { background-image: url('apple33.png'); }
+    91.67% { background-image: url('apple34.png'); }
+    94.44% { background-image: url('apple35.png'); }
+    97.22% { background-image: url('apple36.png'); }
+    100% { background-image: url('apple1.png'); }
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        flex-direction: column;
+        margin-top: 30rem;
+        margin-bottom: 5rem;
+    }
+}
